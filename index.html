@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" media="screen and (max-width:400px)" href="./css/mobile.css">
+</head>
+<body>
+
+
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./images/logo-bookmark.svg" alt="Logo Bookmark">
+    </div>
+    
+    <ul id="nav-items">
+      <li class="nav-item"><a class="nav-link" href="#">FEATURES</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">PRICING</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+      <li class="nav-item"><a class="nav-link nav-btn" href="#">LOGIN</a></li>
+    </ul>
+  </nav>
+
+
+  <section id="showcase">
+    <div>
+      <div class="showcase-text">
+        <h1>A simple Bookmark Manager</h1>
+        <p>
+          A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <button class="chrome-btn">Get it on Chrome</button>
+        <button class="firefox-btn">Get it on Firefox</button>
+  
+      </div>
+    </div>
+    <div class="showcase-img">
+      <img src="./images/illustration-hero.svg" alt="">
+    </div>
+
+  </section>
+
+  <section id="features">
+    <h1>Features</h1>
+    <p>
+      Our aim is to make it quick and easy for you to access your favourite websites. 
+      Your bookmarks sync between your devices so you can access them on the go.
+    </p>
+  </section>
+
+  <!-- <br> <br><br><br>
+  <hr> <br><br><br> -->
+
+  <section id="tab">
+
+    <ul id="tab-headings">
+      <li data-tab-target="#bookmarking" class="active tab">Simple Bookmarking</li>
+      <li data-tab-target="#searching" class=" tab">Speedy Searching</li>
+      <li data-tab-target="#sharing" class="tab">Easy Sharing</li>
+    </ul>
+    <!-- 
+    <div id="tab-headings">
+     
+      <h4><a href="">Simple Bookmarking</a></h4>
+      <h4>Speedy Searching</h4>
+      <h4 style="font-weight: 500;">Easy Sharing</h4>
+
+    </div> -->
+    <div class="tab-content">
+      <div id="bookmarking" data-tab-content class="active tab-display"> 
+        <div class="tab-image">
+          <img style="width: 100%;" src="./images/illustration-features-tab-1.svg" alt="">
+        </div>
+        <div class="tab-text">
+          <h1> Bookmark In one click</h1>
+          <p> Organize your bookmarks however you like. Our simple drag-and-drop interface 
+              gives you complete control over how you manage your favourite sites.  
+          </p>
+          <button class="btn-primary"> More Info</button>
+
+        </div>
+
+      </div>
+
+      <div id="searching" data-tab-content class="tab-display"> 
+        <div class="tab-image">
+          <img style="width: 100%;" src="./images/illustration-features-tab-2.svg" alt="">
+        </div>
+        <div class="tab-text">
+          <h1> Intelligent Search</h1>
+          <p> Our powerful search feature will help you find saved sites in no time at all. 
+            No need to trawl through all of your bookmarks.  
+          </p>
+          <button class="btn-primary"> More Info</button>
+
+        </div>
+
+      </div>
+
+      <div id="sharing" data-tab-content class="tab-display"> 
+        <div class="tab-image">
+          <img style="width: 100%;" src="./images/illustration-features-tab-3.svg" alt="">
+        </div>
+        <div class="tab-text">
+          <h1> Share your bookmarks</h1>
+          <p> 
+            Easily share your bookmarks and collections with others. Create a shareable 
+            link that you can send at the click of a button. 
+          </p>
+          <button class="btn-primary"> More Info</button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="download">
+   <div id="download-heading">
+    <h1>Download the extension</h1>
+    <p>
+      We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+      got a favourite you’d like us to prioritize.
+    </p>
+   </div>
+
+    <div class="container" id="extension-cards">
+      <div class="card chrome">
+        <img src="./images/logo-chrome.svg" alt="">
+        <h2>Add to Chrome</h2>
+        <p>Minimum version</p>
+        <img style="display:block;" src="./images/bg-dots.svg" alt="">
+        <button class="btn-primary"> Add & install extension</button>
+      </div>
+
+      <div class="card firefox">
+        <img src="./images/logo-firefox.svg" alt="">
+        <h2>Add to Chrome</h2>
+        <p>Minimum version</p>
+        <img style="display:block;" src="./images/bg-dots.svg" alt="">
+        <button class="btn-primary"> Add & install extension</button>
+      </div>
+      
+      <div id="opera" class="card opera">
+        <img src="./images/logo-opera.svg" alt="">
+        <h2>Add to Chrome</h2>
+        <p>Minimum version</p>
+        <img style="display:block;" src="./images/bg-dots.svg" alt="">
+        <button class="btn-primary"> Add & install extension</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="faqs">
+
+
+    <div id="faqs-intro">
+      <h1 class="faqs-header">Frequently Asked Questions</h1>
+      <p>
+        Here are some of our FAQs. If you have any other questions you’d like 
+        answered please feel free to email us.
+      </p>
+    </div>
+
+    <div class="accordion-container">
+      <div class="accordion">
+        <!-- <div class="accordion-item" id="faq1">
+          <a class="accordion-link" href="#faq1">
+            What is Bookmark?
+          </a>
+          <div class="answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          </div>
+        </div> -->
+      
+        <div class="accordion-item" id="faq1">
+          <a class="accordion-link" href="#faq1">
+            What is Bookmark?
+            <span>
+              <img class="open" src="./images/icon-arrow.svg" alt="">
+            <img  class="close" src="./images/icon-close.svg" alt="">
+            </span>
+          </a>
+          <div class="answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          </div>
+        </div>
+      
+        <div class="accordion-item" id="faq2">
+          <a class="accordion-link" href="#faq2">
+            How can I request a new browser?
+            <span>
+              <img class="open"  src="./images/icon-arrow.svg" alt="">
+            <img class="close" src="./images/icon-close.svg" alt="">
+            </span>
+          </a>
+          <div class="answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          </div>
+        </div>
+      
+        <div class="accordion-item" id="faq3">
+          <a class="accordion-link" href="#faq3">
+            is there a mobile app?
+            <span>
+              <img class="open" src="./images/icon-arrow.svg" alt="">
+            <img class="close" src="./images/icon-close.svg" alt="">
+            </span>
+          </a>
+          <div class="answer">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+          </div>
+        </div>
+      
+        <div class="accordion-item" id="faq4">
+          <a class="accordion-link" href="#faq4">
+            What about other Chromium browsers?
+            <span>
+              <img class="open" src="./images/icon-arrow.svg" alt="">
+            <img class="close"  src="./images/icon-close.svg" alt="">
+            </span>
+          </a>
+          <div class="answer">
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+            sollicitudin ex et ultricies bibendum.
+          </div>
+        </div>
+      
+      </div>
+      
+    </div>
+    <div><button class="btn-primary"> More Info</button></div>
+  </section>
+  <section id="form-section">
+ <div id="form-div">
+  <p>35,000+ ALREADY JOINED</p>
+  <h1>Stay up-to-date with what we're doing</h1>
+  <form >
+    <input placeholder="Enter your email address" class="email" required type="email">
+    <input  class="submit" type="submit" value="Contact Us">
+  </form>
+ </div>
+
+  </section>
+
+  <footer id="footer">
+    <div class="footer">
+      <div class="footer-text">
+        <img src="./images/logo-bookmark.svg" alt="">
+        <a href="#">FEATURES</a>
+        <a href="#">PRICING</a>
+        <a href="#">CONTACT</a>
+      </div>
+      <div class="footer-icons">
+        <img class="icon" src="./images/icon-facebook.svg" alt="">
+        <img class="twitter-icon icon" src="./images/icon-twitter.svg" alt="">
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+
+  <script src="app.js"></script>
+</body>
+</html>
